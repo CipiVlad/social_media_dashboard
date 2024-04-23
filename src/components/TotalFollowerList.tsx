@@ -14,9 +14,9 @@ const TotalFollowerList = ({ toggle }: ToggleProps) => {
             <div className="flex justify-center gap-5">
                 {/* inject data from model to card */}
                 {FaceBookData && <TotalFollowerCard {...FaceBookData} toggle={toggle} setToggle={() => { }} />}
-                {/* {TwitterData && <TotalFollowerCard {...TwitterData} />}
-                {InstagramData && <TotalFollowerCard {...InstagramData} />}
-                {YouTubeData && <TotalFollowerCard {...YouTubeData} />} */}
+                {TwitterData && <TotalFollowerCard {...TwitterData} toggle={toggle} setToggle={() => { }} />}
+                {InstagramData && <TotalFollowerCard {...InstagramData} toggle={toggle} setToggle={() => { }} />}
+                {YouTubeData && <TotalFollowerCard {...YouTubeData} toggle={toggle} setToggle={() => { }} />}
             </div >
         </>
 

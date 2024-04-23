@@ -10,10 +10,10 @@ align-items: center;`
 
 
 export const TotalCard = styled.div`
-    background-color: ${props => props.theme.dark.backgroundCard || props.theme.light.backgroundCard};
+    background-color: ${props => props.theme.backgroundCard};
     border-radius: 10px;
     padding: 20px;
-    color: var(--white);
+    color: ${props => props.theme.textCard};
 }
 `
 
@@ -25,6 +25,7 @@ export const SocialNetwork = styled.div`
 
 export const FollowerNumber = styled.p`
     ${dflexSchema};
+    color: ${props => props.theme.text};
     font-size: var( --font-fs-4);
     font-weight: 700;
     gap: 10px;

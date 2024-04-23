@@ -18,7 +18,7 @@ function App() {
       background: 'hsl(0, 0%, 100%)',
       backgroundCard: 'hsl(227, 47%, 96%)',
       backgroundToggle: 'linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%))',
-      text: 'hsl(228, 12%, 44%)',
+      text: 'hsl(230, 17%, 14%)',
       textCard: 'hsl(228, 12%, 44%)',
     }
   }
@@ -27,7 +27,7 @@ function App() {
 
 
   return (
-    <ThemeProvider theme={theme}  >
+    <ThemeProvider theme={toggle ? theme.dark : theme.light}  >
       <div className="App">
         <TotalFollowerList toggle={toggle} setToggle={setToggle} />
       </div>
