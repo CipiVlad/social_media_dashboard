@@ -2,7 +2,7 @@ import styled from 'styled-components'
 // TotalFollowerCard
 
 
-const dflexSchema = `
+export const dflexSchema = `
 display: flex;
 justify-content: center;
 align-items: center;`
@@ -11,12 +11,10 @@ align-items: center;`
 
 export const TotalCard = styled.div`
     background-color: ${props => props.theme.backgroundCard};
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0 0 10px 10px;
     color: ${props => props.theme.textCard};
 }
 `
-
 
 export const SocialNetwork = styled.div`
     ${dflexSchema};

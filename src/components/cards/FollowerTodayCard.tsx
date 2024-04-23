@@ -1,6 +1,28 @@
-const FollowerTodayCard = () => {
+import { FollowerTodayData } from "../../models/DataSet";
+import { FollowerCardStyledComponent, TitleInfoAndIcon, RatingFlexContainer, RatingNumber, RatingIcon, RatingText } from "../../style/styles.followerstoday";
+
+
+const FollowerTodayCard = (data: FollowerTodayData) => {
+
+    const { title, icon, number, ratingIcon, ratingNumber } = data
+
+
+
     return (
-        <div>FollowerTodayCard</div>
+
+        <FollowerCardStyledComponent className="w-[250px]">
+            <TitleInfoAndIcon className="dflex justify-between">
+                <p>{title}</p>
+                <img src={icon} alt={icon} />
+            </TitleInfoAndIcon>
+            <RatingFlexContainer>
+                <RatingNumber>{number}</RatingNumber>
+                <RatingIcon src={ratingIcon} alt={ratingIcon} />
+                <RatingText>{ratingNumber}</RatingText>
+            </RatingFlexContainer>
+        </FollowerCardStyledComponent>
+
+
     )
 }
 export default FollowerTodayCard

@@ -5,6 +5,8 @@ import youtube from '../../public/images/icon-youtube.svg'
 
 import up from '../../public/images/icon-up.svg'
 import down from '../../public/images/icon-down.svg'
+
+// data set for TotalFollower
 export type FollowerListData = {
     coloredLine: string,
     icon: string,
@@ -67,3 +69,73 @@ export const YouTubeData: FollowerListData =
     followerTitle: "SUBSCRIBERS",
 }
 
+
+// data set for FollowerToday
+
+export type FollowerTodayData = {
+    title: string,
+    icon: string,
+    number: string,
+    ratingIcon: string
+    ratingNumber: string
+}
+
+export const FollowerTodayDataList: FollowerTodayData[] = [
+
+    {
+        title: "Page Views",
+        icon: faceBook,
+        number: "87",
+        ratingIcon: up,
+        ratingNumber: "3%",
+    },
+    {
+        title: "Likes",
+        icon: twitter,
+        number: "52",
+        ratingIcon: up,
+        ratingNumber: "2%",
+    },
+    {
+        title: "Likes",
+        icon: instagram,
+        number: "5462",
+        ratingIcon: up,
+        ratingNumber: "2257%",
+    },
+    {
+        title: "Profile Views",
+        icon: instagram,
+        number: "52k",
+        ratingIcon: up,
+        ratingNumber: "1375%",
+    },
+    {
+        title: "Retweets",
+        icon: twitter,
+        number: "117",
+        ratingIcon: up,
+        ratingNumber: "303%",
+    },
+    {
+        title: "Likes",
+        icon: twitter,
+        number: "507",
+        ratingIcon: up,
+        ratingNumber: "553%",
+    },
+    {
+        title: "Likes",
+        icon: youtube,
+        number: "107",
+        ratingIcon: up,
+        ratingNumber: "19%",
+    },
+    {
+        title: "Total Views",
+        icon: youtube,
+        number: "1407",
+        ratingIcon: up,
+        ratingNumber: "12%",
+    }
+]

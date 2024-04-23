@@ -2,14 +2,14 @@ import { FollowerListData } from '../../models/DataSet'
 import { SocialNetwork, FollowerNumber, FollowerTitle, Ratings, RatingNumber, TotalCard } from '../../style/styles.totalfollowercard'
 
 type ToggleProp = {
-    toggle: toggle,
+    toggle: boolean,
     setToggle: React.Dispatch<React.SetStateAction<boolean>>
 
 }
 
 const TotalFollowerCard = (data: FollowerListData & ToggleProp) => {
     const { coloredLine, icon, username, followers, ratingIcon, ratingNumber, ratingDay, followerTitle } = data
-    console.log(data.toggle);
+    // console.log(data.toggle);
 
     //test if ratingIcon includes up or down 
     // console.log(ratingIcon.includes('down') ? 'down' : 'up');
@@ -19,7 +19,7 @@ const TotalFollowerCard = (data: FollowerListData & ToggleProp) => {
             <div className="line"
                 style={{
                     height: '5px',
-                    borderRadius: '5px', margin: '10px 0px 10px 0px', backgroundColor: coloredLine
+                    backgroundColor: coloredLine
                 }} />
             <SocialNetwork>
                 <img src={icon} alt={icon} />
