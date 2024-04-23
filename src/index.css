@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +9,55 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+
+  /* COLORS */
+
+  /* Primary */
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+
+  /* SOCIAL MEDIA COLORS */
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+
+  /* TOGGLE Dark Theme */
+  --toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --toggle-bg: hsl(230, 22%, 74%);
 
 
+  /* Light Theme */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --light-grayish-blue: hsl(227, 47%, 96%);
+  --dark-grayish-blue: hsl(228, 12%, 44%);
+  --very-dark-blue: hsl(230, 17%, 14%);
 
+  /* DARK THEME */
+  --very-dark-blue: hsl(230, 17%, 14%);
+  --very-dark-blue-top-bg-pattern: hsl(232, 19%, 15%);
+  --dark-desaturated-blue-card-bg: hsl(228, 28%, 20%);
+  --desaturated-blue-text: hsl(228, 34%, 66%);
+  --white: hsl(0, 0%, 100%);
+
+
+  /* FONT SIZE OVERVIEW CARD HEADINGS */
+  --font-fs-default: 14px;
+  --font-fs-0: 0.75rem;
+  --font-fs-1: 1.125rem;
+  --font-fs-2: 1.5rem;
+  --font-fs-3: 2.25rem;
+  --font-fs-4: 3.5rem;
+
+}
+
+
+/** @component TotalFollowerCard */
+
+.background_total_followers_list {
+  background-color: var(--dark-desaturated-blue-card-bg);
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--white);
 }

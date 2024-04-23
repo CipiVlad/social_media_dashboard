@@ -1,9 +1,12 @@
+import TotalFollowerList from './components/TotalFollowerList'
 import './index.css'
+
 function App() {
 
   return (
-    <div className="App">
 
+    <div className="App">
+      <TotalFollowerList />
     </div>
   )
 }
