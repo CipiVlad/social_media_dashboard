@@ -51,13 +51,3 @@
   --font-fs-4: 3.5rem;
 
 }
-
-
-/** @component TotalFollowerCard */
-
-.background_total_followers_list {
-  background-color: var(--dark-desaturated-blue-card-bg);
-  border-radius: 10px;
-  padding: 20px;
-  color: var(--white);
-}

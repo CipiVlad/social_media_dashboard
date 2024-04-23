@@ -13,6 +13,7 @@ export type FollowerListData = {
     ratingIcon: string,
     ratingNumber: number,
     ratingDay: string
+    followerTitle: string
 }
 
 export const FaceBookData: FollowerListData =
@@ -23,7 +24,8 @@ export const FaceBookData: FollowerListData =
     followers: "1987",
     ratingIcon: up,
     ratingNumber: 12,
-    ratingDay: 'Today'
+    ratingDay: 'Today',
+    followerTitle: "FOLLOWERS",
 }
 
 export const TwitterData: FollowerListData =
@@ -34,7 +36,8 @@ export const TwitterData: FollowerListData =
     followers: "1044",
     ratingIcon: up,
     ratingNumber: 99,
-    ratingDay: 'Today'
+    ratingDay: 'Today',
+    followerTitle: "FOLLOWERS",
 }
 
 
@@ -47,7 +50,8 @@ export const InstagramData: FollowerListData =
     followers: "11k",
     ratingIcon: up,
     ratingNumber: 1099,
-    ratingDay: 'Today'
+    ratingDay: 'Today',
+    followerTitle: "FOLLOWERS",
 }
 
 
@@ -59,6 +63,7 @@ export const YouTubeData: FollowerListData =
     followers: "8239",
     ratingIcon: down,
     ratingNumber: 144,
-    ratingDay: 'Today'
+    ratingDay: 'Today',
+    followerTitle: "SUBSCRIBERS",
 }
 

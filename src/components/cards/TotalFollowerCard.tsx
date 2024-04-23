@@ -1,41 +1,31 @@
-import up from '../../../public/images/icon-up.svg'
-import down from '../../../public/images/icon-down.svg'
 import { FollowerListData } from '../../models/DataSet'
-
+import { SocialNetwork, FollowerNumber, FollowerTitle, Ratings, RatingNumber, TotalCard } from '../../style/styles.totalfollowercard'
 
 
 const TotalFollowerCard = (data: FollowerListData) => {
-    const { coloredLine, icon, username, followers, ratingIcon, ratingNumber, ratingDay } = data
-
+    const { coloredLine, icon, username, followers, ratingIcon, ratingNumber, ratingDay, followerTitle } = data
 
     return (
-        <div className='background_total_followers_list'>
+        <TotalCard className='w-[250px]'>
             <div className="line"
                 style={{
-                    backgroundColor: `${coloredLine}`,
-                    width: '100%',
                     height: '5px',
-                    borderRadius: '5px',
-                    margin: '10px 0px 10px 0px',
-
-                }}>
-
-            </div>
-            <div className="social_network">
+                    borderRadius: '5px', margin: '10px 0px 10px 0px', backgroundColor: coloredLine
+                }} />
+            <SocialNetwork>
                 <img src={icon} alt={icon} />
                 <p>{username}</p>
-            </div>
-            <div className="followers_number">
-                <p>{followers}</p>
-            </div>
-            <div className="followers">
-                <p>FOLLOWERS</p>
-            </div>
-            <div>
+            </SocialNetwork>
+            <FollowerNumber>{followers}</FollowerNumber>
+            <FollowerTitle>{followerTitle}</FollowerTitle>
+            <Ratings>
                 <img src={ratingIcon} alt={ratingIcon} width={10} height={10} />
-                <p className="today">{ratingNumber} {ratingDay}</p>
-            </div>
-        </div>
+                <RatingNumber
+                    className="today">
+                    {ratingNumber} {ratingDay}
+                </RatingNumber>
+            </Ratings>
+        </TotalCard>
     )
 }
 export default TotalFollowerCard
