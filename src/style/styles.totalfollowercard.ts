@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 // TotalFollowerCard
 
+
 const dflexSchema = `
 display: flex;
 justify-content: center;
 align-items: center;`
 
 
+
 export const TotalCard = styled.div`
-    background-color: var(--dark-desaturated-blue-card-bg);
+    background-color: ${props => props.theme.dark.backgroundCard || props.theme.light.backgroundCard};
     border-radius: 10px;
     padding: 20px;
     color: var(--white);
