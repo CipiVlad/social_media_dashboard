@@ -1,16 +1,17 @@
 import styled from 'styled-components'
 // TotalFollowerCard
 
-const dflexSchema = `display: flex;
+const dflexSchema = `
+display: flex;
 justify-content: center;
 align-items: center;`
 
 
 export const TotalCard = styled.div`
-background-color: var(--dark-desaturated-blue-card-bg);
-border-radius: 10px;
-padding: 20px;
-color: var(--white);
+    background-color: var(--dark-desaturated-blue-card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--white);
 }
 `
 
@@ -31,7 +32,7 @@ export const FollowerTitle = styled.p`
     text-align: center;
     letter-spacing: 2px;
     font-size: var(--font-size-xs);
-    font-weight: 700;
+    font-weight: 400;
 `
 
 export const Ratings = styled.div`
@@ -43,7 +44,14 @@ export const RatingNumber = styled.p`
     font-size: var(--font-size-xs);
     font-weight: 700;
     letter-spacing: 1px;
-    color: var(--lime-green);
+    color: ${props => props.className === 'up' ? 'var(--lime-green)' : 'var(--bright-red)'};
     text-align: center;
-
 `
+
+/**
+ * @explain dynamic color in RatingNumber: 
+ * color in RatingNumber will change based on up or down rating number in the FollowerListData
+ * if ratingIcon includes up or down then color will be lime-green or bright-red
+ * "props" is used to get the value from FollowerListData and pass it to RatingNumber component as a prop className "up" or "down" depending on up or down
+ * then in TotalFollowerCard component, RatingNumber component will change dynamically
+ */

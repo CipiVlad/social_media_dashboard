@@ -5,6 +5,9 @@ import { SocialNetwork, FollowerNumber, FollowerTitle, Ratings, RatingNumber, To
 const TotalFollowerCard = (data: FollowerListData) => {
     const { coloredLine, icon, username, followers, ratingIcon, ratingNumber, ratingDay, followerTitle } = data
 
+    //test if ratingIcon includes up or down 
+    // console.log(ratingIcon.includes('down') ? 'down' : 'up');
+
     return (
         <TotalCard className='w-[250px]'>
             <div className="line"
@@ -21,7 +24,7 @@ const TotalFollowerCard = (data: FollowerListData) => {
             <Ratings>
                 <img src={ratingIcon} alt={ratingIcon} width={10} height={10} />
                 <RatingNumber
-                    className="today">
+                    className={ratingIcon.includes('down') ? 'down' : 'up'}>
                     {ratingNumber} {ratingDay}
                 </RatingNumber>
             </Ratings>
