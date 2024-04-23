@@ -3,14 +3,10 @@ import { FollowerCardStyledComponent, TitleInfoAndIcon, RatingFlexContainer, Rat
 
 
 const FollowerTodayCard = (data: FollowerTodayData) => {
-
     const { title, icon, number, ratingIcon, ratingNumber } = data
 
-
-
     return (
-
-        <FollowerCardStyledComponent className="w-[250px]">
+        <FollowerCardStyledComponent className="w-[250px] h-[100px] p-4 ">
             <TitleInfoAndIcon className="dflex justify-between">
                 <p>{title}</p>
                 <img src={icon} alt={icon} />
@@ -21,8 +17,6 @@ const FollowerTodayCard = (data: FollowerTodayData) => {
                 <RatingText>{ratingNumber}</RatingText>
             </RatingFlexContainer>
         </FollowerCardStyledComponent>
-
-
     )
 }
 export default FollowerTodayCard
