@@ -4,15 +4,14 @@ type ToggleProps = {
 }
 const Navbar = ({ toggle, setToggle }: ToggleProps = { toggle: false, setToggle: () => { } }) => {
     return (
-        <nav className="w-full h-[60px] flex justify-between items-center px-8">
+        <nav className="w-full h-[60px] flex justify-between items-center ">
             <div>
                 <h1 className={toggle ? "text-white" : "text-black"}>Social Media Dashboard</h1>
                 <p className=
                     {toggle ? "" : "text-black"}>Total Followers: 23,004</p>
             </div>
-            <div className=".navbar_toggle_container">
+            <div className=".navbar_toggle_container flex justify-between items-center gap-3">
                 <span className={toggle ? "font-bold text-white" : "font-bold"}>Dark Mode</span>
-                {/* <ToggleSwitch /> */}
                 <label htmlFor="switch" className="switch">
                     <input type="checkbox" id="switch" />
                     <span className="slider round" onClick={() => setToggle(!toggle)}></span>
