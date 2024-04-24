@@ -11,7 +11,7 @@ align-items: center;`
 
 export const TotalCard = styled.div`
     background-color: ${props => props.theme.backgroundCard};
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 5px 5px;
     color: ${props => props.theme.textCard};
 }
 `

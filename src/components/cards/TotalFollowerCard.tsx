@@ -14,7 +14,7 @@ const TotalFollowerCard = (data: FollowerListData & ToggleProp) => {
     // console.log(ratingIcon.includes('down') ? 'down' : 'up');
 
     return (
-        <TotalCard className='w-[250px]'>
+        <TotalCard className='w-[250px] h-[250px]'>
             <div className="line"
                 style={{
                     height: '5px',

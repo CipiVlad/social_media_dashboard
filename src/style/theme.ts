@@ -1,6 +1,7 @@
 export const theme = {
     dark: {
         background: 'hsl(230, 17%, 14%)',
+        backgroundTop: 'hsl(232, 19%, 15%)',
         backgroundCard: 'hsl(228, 28%, 20%)',
         backgroundToggle: 'linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%))',
         text: 'hsl(0, 0%, 100%)',

@@ -8,11 +8,10 @@ type ToggleProps = {
 }
 const FollowerTodayCard = (data: FollowerTodayData & ToggleProps) => {
     const { title, icon, number, ratingIcon, ratingNumber } = data
-    console.log(data.toggle);
 
     return (
         <FollowerCardStyledComponent className="w-[250px] h-[100px] p-4 ">
-            <TitleInfoAndIcon className="dflex justify-between">
+            <TitleInfoAndIcon className="flex justify-between">
                 <p>{title}</p>
                 <img src={icon} alt={icon} />
             </TitleInfoAndIcon>
