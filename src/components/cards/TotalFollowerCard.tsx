@@ -4,7 +4,6 @@ import { SocialNetwork, FollowerNumber, FollowerTitle, Ratings, RatingNumber, To
 type ToggleProp = {
     toggle: boolean,
     setToggle: React.Dispatch<React.SetStateAction<boolean>>
-
 }
 
 const TotalFollowerCard = (data: FollowerListData & ToggleProp) => {

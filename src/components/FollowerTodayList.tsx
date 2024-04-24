@@ -1,7 +1,13 @@
 import { FollowerTodayDataList } from "../models/DataSet"
 import FollowerTodayCard from "./cards/FollowerTodayCard";
 
-const FollowerTodayList = () => {
+
+type ToggleProps = {
+    toggle: boolean,
+    setToggle: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const FollowerTodayList = ({ toggle, setToggle }: ToggleProps) => {
     return (
         <div className="grid grid-cols-4 grid-rows-2 gap-5 pt-4">
             {
@@ -13,6 +19,8 @@ const FollowerTodayList = () => {
                         number={ele.number}
                         ratingIcon={ele.ratingIcon}
                         ratingNumber={ele.ratingNumber}
+                        toggle={toggle}
+                        setToggle={setToggle}
                     />
                 ))
             }

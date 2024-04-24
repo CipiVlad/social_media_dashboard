@@ -51,3 +51,12 @@
   --font-fs-4: 3.5rem;
 
 }
+
+.App {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var();
+
+}
