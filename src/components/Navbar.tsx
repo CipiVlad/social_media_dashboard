@@ -8,10 +8,10 @@ const Navbar = ({ toggle, setToggle }: ToggleProps = { toggle: false, setToggle:
             <div>
                 <h1 className={toggle ? "text-white" : "text-black"}>Social Media Dashboard</h1>
                 <p className=
-                    {toggle ? "" : "text-black"}>Total Followers: 23,004</p>
+                    {toggle ? "" : "color:hsl(228, 12%, 44%)"}>Total Followers: 23,004</p>
             </div>
             <div className=".navbar_toggle_container flex justify-between items-center gap-3">
-                <span className={toggle ? "font-bold text-white" : "font-bold"}>Dark Mode</span>
+                <span className={toggle ? "font-bold text-white" : ".active_darkmode_span"}>Dark Mode</span>
                 <label htmlFor="switch" className="switch">
                     <input type="checkbox" id="switch" />
                     <span className="slider round" onClick={() => setToggle(!toggle)}></span>

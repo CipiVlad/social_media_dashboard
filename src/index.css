@@ -63,7 +63,7 @@
 }
 
 h1 {
-  font-size: var(--font-fs-3);
+  font-size: var(--font-fs-2);
   color: var(--white);
   font-weight: 600;
 }
