@@ -57,9 +57,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 95vh;
-  background-color: var();
-
+  height: 100vh;
 }
 
 h1 {
@@ -78,9 +76,10 @@ h1~p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 }
 
+
+/* toggle switch style */
 .switch {
   position: relative;
   display: inline-block;
@@ -152,20 +151,31 @@ input:checked+.slider:before {
   font-weight: 900;
 }
 
-
-
+/* end of toggle switch style */
 /* END DESKTOP **/
+
 
 /* @media queries */
 
 @media screen and (max-width: 430px) {
 
-  /* nav first div */
-
+  .AppOnMobile {
+    height: auto;
+  }
 
   .App>div {
     display: block;
-    margin: 10vh auto;
+    margin: 5vh auto;
+  }
+
+  /* totalfollowers container */
+  .App>div>div {
+    width: 330px;
+    margin-bottom: 4vh;
+  }
+
+  .navbar {
+    display: grid;
   }
 
   .navbar_toggle_container {

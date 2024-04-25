@@ -7,8 +7,6 @@ display: flex;
 justify-content: center;
 align-items: center;`
 
-
-
 export const TotalCard = styled.div`
     background-color: ${props => props.theme.backgroundCard};
     border-radius: 0 0 5px 5px;

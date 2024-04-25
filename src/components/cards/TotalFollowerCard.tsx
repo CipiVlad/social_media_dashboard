@@ -9,7 +9,7 @@ type ToggleProp = {
 const TotalFollowerCard = (data: FollowerListData & ToggleProp) => {
     const { coloredLine, icon, username, followers, ratingIcon, ratingNumber, ratingDay, followerTitle } = data
     return (
-        <TotalCard className='w-[250px] h-[250px]'>
+        <TotalCard className='w-[250px] h-[250px] '>
             <div className="line"
                 style={{
                     height: '5px',

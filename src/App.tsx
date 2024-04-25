@@ -15,7 +15,7 @@ function App() {
     <ThemeProvider theme={toggle ? theme.dark : theme.light}  >
       <BackGroundDark>
         <BackgroundCardTop>
-          <div className="App">
+          <div className="App AppOnMobile" style={toggle ? theme.dark : theme.light}>
             <Navbar toggle={toggle} setToggle={setToggle} />
             <TotalFollowerList toggle={toggle} setToggle={setToggle} />
             <FollowerTodayList toggle={toggle} setToggle={setToggle} />

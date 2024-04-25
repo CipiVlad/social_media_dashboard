@@ -5,7 +5,7 @@ type ToggleProps = {
 }
 const Navbar = ({ toggle, setToggle }: ToggleProps = { toggle: false, setToggle: () => { } }) => {
     return (
-        <nav className="w-full h-[60px] flex justify-between items-center mt-5">
+        <nav className="navbar w-full h-[60px] flex justify-between items-center mt-5 ">
             <div>
                 <h1 className={toggle ? "text-white" : "text-black"}>Social Media Dashboard</h1>
                 <p className=
