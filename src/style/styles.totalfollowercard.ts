@@ -11,6 +11,11 @@ export const TotalCard = styled.div`
     background-color: ${props => props.theme.backgroundCard};
     border-radius: 0 0 5px 5px;
     color: ${props => props.theme.textCard};
+
+    &:hover{
+        background-color:${props => props.theme.backgroundHover};
+    }
+
 }
 `
 

@@ -15,7 +15,7 @@ const TotalFollowerCard = (data: FollowerListData & ToggleProp) => {
                     height: '5px',
                     borderRadius: '3px 3px 0 0',
                     marginBottom: '35px',
-                    backgroundColor: coloredLine,
+                    background: coloredLine,
 
                 }} />
             <SocialNetwork>

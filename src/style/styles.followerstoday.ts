@@ -10,6 +10,10 @@ export const FollowerCardStyledComponent = styled.div`
     background-color: ${props => props.theme.backgroundCard};
     border-radius: 5px 5px;
     color: ${props => props.theme.textCard};
+
+    &:hover{
+        background-color:${props => props.theme.backgroundHover};
+    }
 `
 
 export const TitleInfoAndIcon = styled.div`
@@ -36,5 +40,4 @@ export const RatingText = styled.p`
 color: ${props => props.className === 'up' ? 'var(--lime-green)' : 'var(--bright-red)'};
 font-size: 12px;
 font-weight: 700;
-
 `

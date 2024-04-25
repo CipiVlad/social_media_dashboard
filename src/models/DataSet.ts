@@ -45,8 +45,7 @@ export const TwitterData: FollowerListData =
 
 export const InstagramData: FollowerListData =
 {
-    coloredLine: 'hsl(37, 97%, 70%)',
-    // coloredLine: "hsl(37, 97%, 70%), hsl(329, 70%, 58%)",
+    coloredLine: "linear-gradient(45deg,hsl(37, 97%, 70%), hsl(329, 70%, 58%))",
     icon: instagram,
     username: '@realnathanf',
     followers: "11k",
