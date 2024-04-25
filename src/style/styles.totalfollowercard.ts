@@ -31,7 +31,7 @@ export const FollowerNumber = styled.p`
 
 export const FollowerTitle = styled.p`
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-size: var(--font-size-xs);
     font-weight: 400;
 `
@@ -39,10 +39,11 @@ export const FollowerTitle = styled.p`
 export const Ratings = styled.div`
     ${dflexSchema};
     gap: 10px;
+    margin-top:35px;
 `
 
 export const RatingNumber = styled.p`
-    font-size: var(--font-size-xs);
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
     color: ${props => props.className === 'up' ? 'var(--lime-green)' : 'var(--bright-red)'};

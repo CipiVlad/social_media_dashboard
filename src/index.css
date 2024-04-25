@@ -81,8 +81,6 @@ h1~p {
   padding: 0 20px;
 }
 
-
-
 .switch {
   position: relative;
   display: inline-block;
@@ -147,4 +145,32 @@ input:checked+.slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.active_lightmode_span {
+  color: var(--desaturated-blue-text);
+  font-weight: 900;
+}
+
+
+
+/* END DESKTOP **/
+
+/* @media queries */
+
+@media screen and (max-width: 430px) {
+
+  /* nav first div */
+
+
+  .App>div {
+    display: block;
+    margin: 10vh auto;
+  }
+
+  .navbar_toggle_container {
+    margin-bottom: 2vh;
+  }
+
+
 }

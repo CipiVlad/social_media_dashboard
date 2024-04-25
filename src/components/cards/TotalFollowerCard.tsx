@@ -18,7 +18,10 @@ const TotalFollowerCard = (data: FollowerListData & ToggleProp) => {
             <div className="line"
                 style={{
                     height: '5px',
-                    backgroundColor: coloredLine
+                    borderRadius: '3px 3px 0 0',
+                    marginBottom: '35px',
+                    backgroundColor: coloredLine,
+
                 }} />
             <SocialNetwork>
                 <img src={icon} alt={icon} />

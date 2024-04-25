@@ -10,7 +10,7 @@ type ToggleProps = {
 const FollowerTodayList = ({ toggle, setToggle }: ToggleProps) => {
     return (
         <>
-            <h2 className="text-xl font-bold text-white ">Overview - Today</h2>
+            <h2 style={{ color: toggle ? "hsl(0, 0%, 100%)" : "hsl(228, 12%, 44%)", fontWeight: "700", fontSize: "18px" }}>Overview - Today</h2>
             <div className="grid grid-cols-4 grid-rows-2 gap-5 pt-4">
                 {
                     FollowerTodayDataList.map((ele, idx) => (
