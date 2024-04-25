@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screenshot](./public/screenshot_scoialmedia_dashboard.png)
 
 ### Links
 
@@ -45,12 +45,33 @@ Users should be able to:
 - [Styled Components](https://styled-components.com/)
 
 ### Code Snippets
+#### Process
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
+
+#### App Overview
+```js
+
+function App() {
+  const [toggle, setToggle] = useState<boolean>(true)
+  return (
+    <ThemeProvider theme={toggle ? theme.dark : theme.light}  >
+      <BackGroundDark>
+        <BackgroundCardTop>
+          <div className="App AppOnMobile" style={toggle ? theme.dark : theme.light}>
+            <Navbar toggle={toggle} setToggle={setToggle} />
+            <TotalFollowerList toggle={toggle} setToggle={setToggle} />
+            <FollowerTodayList toggle={toggle} setToggle={setToggle} />
+          </div>
+        </BackgroundCardTop>
+      </BackGroundDark>
+    </ThemeProvider >
+  )
 }
+
 ```
+
+##### Models: Set Up Model and add Data
+
 ```js
 // data flow
 
@@ -82,6 +103,10 @@ export const FaceBookData: FollowerListData =
     ratingDay: 'Today',
     followerTitle: "FOLLOWERS",
 }
+```
+
+##### Components And Card
+```js
 
 // FollowerTodayList.tsx Components
 const FollowerTodayList = ({ toggle, setToggle }: ToggleProps) => {
@@ -138,8 +163,10 @@ const FollowerTodayCard = (data: FollowerTodayData & ToggleProps) => {
     )
 }
 export default FollowerTodayCard
+```
 
-
+#### Styled-Components And Theming
+```js
 // Style Componets
 // ./style/styles.followerstoday.ts
 // combining tailwind, styled-comonents with theming and props,  as well as conditionals
@@ -171,29 +198,11 @@ export const theme = {
         textCard: 'hsl(228, 12%, 44%)',
     }
 }
-
-function App() {
-  const [toggle, setToggle] = useState<boolean>(true)
-  return (
-    <ThemeProvider theme={toggle ? theme.dark : theme.light}  >
-      <BackGroundDark>
-        <BackgroundCardTop>
-          <div className="App AppOnMobile" style={toggle ? theme.dark : theme.light}>
-            <Navbar toggle={toggle} setToggle={setToggle} />
-            <TotalFollowerList toggle={toggle} setToggle={setToggle} />
-            <FollowerTodayList toggle={toggle} setToggle={setToggle} />
-          </div>
-        </BackgroundCardTop>
-      </BackGroundDark>
-    </ThemeProvider >
-  )
-}
-
 ```
 
 ### Continued development
 
-I think this project is great for 1) testing my grid and flex skills and 2) combining tailwind with styled components as there is no great need of writing vanilla css.
+I think this project is great for 1) testing grid and flex skills and 2) combining tailwind with styled components as there is no great need of writing vanilla css.
 I will use this concept for future projects, because I think when getting more skilled with it, 
 it'll be a great deal for clean code (such as reusabiltiy of components for theming the design).
 
@@ -205,11 +214,9 @@ it'll be a great deal for clean code (such as reusabiltiy of components for them
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- [Website](https://cipivlad.github.io/myportfoliosite/)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/CipiVlad)
+- [DEV.to](https://dev.to/cipivlad)
 
 ## Tags
 
