@@ -10,7 +10,7 @@ const FollowerTodayCard = (data: FollowerTodayData & ToggleProps) => {
     const { title, icon, number, ratingIcon, ratingNumber } = data
 
     return (
-        <FollowerCardStyledComponent className="w-[250px] h-[100px] p-4 ">
+        <FollowerCardStyledComponent className="w-[250px] h-[130px] p-4 grid items-end">
             <TitleInfoAndIcon className="flex justify-between">
                 <p>{title}</p>
                 <img src={icon} alt={icon} />
@@ -18,7 +18,9 @@ const FollowerTodayCard = (data: FollowerTodayData & ToggleProps) => {
             <RatingFlexContainer>
                 <RatingNumber>{number}</RatingNumber>
                 <RatingIcon src={ratingIcon} alt={ratingIcon} />
-                <RatingText>{ratingNumber}</RatingText>
+                <RatingText
+                    className={ratingIcon.includes('down') ? 'down' : 'up'}
+                >{ratingNumber}</RatingText>
             </RatingFlexContainer>
         </FollowerCardStyledComponent>
     )

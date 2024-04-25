@@ -91,9 +91,9 @@ export const FollowerTodayDataList: FollowerTodayData[] = [
     },
     {
         title: "Likes",
-        icon: twitter,
+        icon: faceBook,
         number: "52",
-        ratingIcon: up,
+        ratingIcon: down,
         ratingNumber: "2%",
     },
     {
@@ -128,14 +128,14 @@ export const FollowerTodayDataList: FollowerTodayData[] = [
         title: "Likes",
         icon: youtube,
         number: "107",
-        ratingIcon: up,
+        ratingIcon: down,
         ratingNumber: "19%",
     },
     {
         title: "Total Views",
         icon: youtube,
         number: "1407",
-        ratingIcon: up,
+        ratingIcon: down,
         ratingNumber: "12%",
     }
 ]
